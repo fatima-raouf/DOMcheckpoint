@@ -1,0 +1,84 @@
+#cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.item h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.item p.price {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #eee;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.quantity button:hover {
+  background-color: #ccc;
+}
+
+.quantity input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.delete {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.2
+}
+.heart {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.heart.red {
+  background-color: red;
+}
